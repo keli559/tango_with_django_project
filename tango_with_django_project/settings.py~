@@ -79,6 +79,11 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
+PASSWORD_HASHERS = (
+'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+)
+
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
