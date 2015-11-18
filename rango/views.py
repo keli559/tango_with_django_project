@@ -211,7 +211,7 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def restricted(request):
-    return HttpResponse("Since you're logged in, you can see this text!")   
+    return render(request, 'rango/restricted.html', {})   
 
 #==========================9.7 LOGGING OUT=============================
 from django.contrib.auth import logout

@@ -8,7 +8,7 @@
     <img src="{% static "images/topLogo.jpg" %}" alt="Odin Logo" /><!--New line-->
     <h1>Rango says ...</h1>
     hello world! <strong>{{ boldmessage }} </strong><br />
-    <a href="/rango/about/">About</a><br />
-    <img src="{% static "images/rango.jpg" %}" alt="Picture of Rango" /><!--New line-->
+    <br />
+    <img src="{% static "images/pirate_ship.jpg" %}" alt="Picture of Rango" /><!--New line-->
   </body>
 </html>
