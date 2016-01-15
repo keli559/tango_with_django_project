@@ -25,6 +25,15 @@ SECRET_KEY = '5ab(n(&kw4qrp+i3+t0b&*tr6eamm6006fga5_h**m=knq(_!s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+#Persistent sessions have an additional setting, SESSION_COOKIE_AGE,
+#which allows you to specify the age of which a cookie can live to.
+#This value should be an integer, representing the number of seconds
+#the cookie can live for. For example, specifying a value of 1209600
+#will mean your websites cookies expire after a two week period.
+SESSION_COOKIE_AGE = 1209600
+
 TEMPLATE_DEBUG = True
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
 TEMPLATE_DIRS = (
@@ -65,7 +74,7 @@ WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/1.7/ref/settings/#databases
+# https://docs.djangoproject.co/en/1.7/ref/settings/#databases
 
 DATABASES = {
     'default': {

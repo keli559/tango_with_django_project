@@ -25,6 +25,8 @@ SECRET_KEY = '5ab(n(&kw4qrp+i3+t0b&*tr6eamm6006fga5_h**m=knq(_!s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
 TEMPLATE_DEBUG = True
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
 TEMPLATE_DIRS = (
@@ -65,7 +67,7 @@ WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/1.7/ref/settings/#databases
+# https://docs.djangoproject.co/en/1.7/ref/settings/#databases
 
 DATABASES = {
     'default': {
