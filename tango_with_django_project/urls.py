@@ -10,6 +10,8 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^rango/', include('rango.urls')),
+    url(r'^accounts/', include('registration.backends.simple.urls')),
+    url(r'^activate/', include('registration.backends.default.urls')),
 )
 
 # UNDERNEATH your urlpatterns definition, add the following two lines:
